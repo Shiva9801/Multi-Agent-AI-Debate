@@ -38,7 +38,7 @@ async def ask_mixtral(prompt):
 
 async def ask_gemini(prompt):
     try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-2.5-flash")
         res = model.generate_content(prompt)
         return res.text
     except Exception as e:
