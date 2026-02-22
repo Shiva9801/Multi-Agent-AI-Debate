@@ -1,6 +1,6 @@
 # Multi-Agent AI Debate System
 
-A web app where three AI models (Claude, GPT-4o, Gemini, Gorq) debate your questions, cross-critique each other, and deliver one synthesized final answer with a confidence score.
+A web app where multiple AI models (Claude, GPT-4o, Gemini, Gorq) debate your questions, cross-critique each other, and deliver one synthesized final answer with a confidence score.
 
 Built with Python FastAPI backend and React frontend for a smooth production experience.
 
