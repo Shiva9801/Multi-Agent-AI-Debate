@@ -1,1 +1,47 @@
-@import "tailwindcss";
+/* Tailwind: uncomment when using @tailwindcss/vite */
+/* @import "tailwindcss"; */
+
+body, #root {
+  min-height: 100vh;
+  margin: 0;
+}
+#root {
+  background: #030712;
+  color: #fff;
+  padding: 2rem;
+}
+/* Basic layout when Tailwind isn't loaded */
+#root input { padding: 0.75rem 1rem; border-radius: 0.5rem; background: #1f2937; color: #fff; border: none; flex: 1; }
+#root button { background: #2563eb; color: #fff; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 700; border: none; cursor: pointer; }
+#root button:hover { background: #1d4ed8; }
+#root button:disabled { opacity: 0.6; cursor: not-allowed; }
+#root h1 { font-size: 1.875rem; font-weight: 700; text-align: center; margin-bottom: 2rem; }
+#root h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; }
+#root .flex { display: flex; gap: 0.5rem; }
+#root .max-w-2xl { max-width: 42rem; margin-left: auto; margin-right: auto; }
+#root .mb-8 { margin-bottom: 2rem; }
+#root .text-center { text-align: center; }
+#root .text-yellow-400 { color: #facc15; }
+#root .bg-gray-800 { background: #1f2937; }
+#root .rounded-xl { border-radius: 0.75rem; }
+#root .p-4 { padding: 1rem; }
+#root .bg-green-900 { background: #14532d; }
+#root .p-6 { padding: 1.5rem; }
+#root .mt-6 { margin-top: 1.5rem; }
+#root .text-blue-400 { color: #60a5fa; }
+#root .text-purple-400 { color: #c084fc; }
+#root .grid { display: grid; gap: 1rem; }
+@media (min-width: 768px) { #root .grid { grid-template-columns: repeat(3, 1fr); } }
+#root .mb-10 { margin-bottom: 2.5rem; }
+#root .mb-4 { margin-bottom: 1rem; }
+#root .mb-3 { margin-bottom: 0.75rem; }
+#root .mb-2 { margin-bottom: 0.5rem; }
+#root .text-sm { font-size: 0.875rem; }
+#root .whitespace-pre-wrap { white-space: pre-wrap; }
+#root .text-xs { font-size: 0.75rem; }
+#root .bg-gray-700 { background: #374151; }
+#root .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+#root .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+#root .rounded { border-radius: 0.25rem; }
+#root .text-gray-300 { color: #d1d5db; }
+#root .capitalize { text-transform: capitalize; }

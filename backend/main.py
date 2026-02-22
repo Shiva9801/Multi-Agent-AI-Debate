@@ -10,6 +10,12 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
+
+@app.get("/")
+async def root():
+    return {"message": "Debate API", "docs": "/docs", "debate": "POST /debate"}
+
+
 @app.post("/debate")
 async def debate(data: dict):
     from debate_logic import run_debate

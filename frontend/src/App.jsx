@@ -12,7 +12,8 @@ export default function App() {
     setLoading(true)
     setResult(null)
 
-    const res = await fetch('https://multi-agent-ai-debate.onrender.com/debate', {
+    const api = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+    const res = await fetch(`${api}/debate`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question })

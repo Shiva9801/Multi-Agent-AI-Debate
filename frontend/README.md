@@ -32,7 +32,6 @@ Built with Python FastAPI backend and React frontend for a smooth production exp
 ### Prerequisites
 - Python 3.11+
 - Node.js LTS
-- Cursor IDE (recommended for AI-assisted development)
 - Free API keys: [Groq](https://console.groq.com), [Gemini AI Studio](https://aistudio.google.com)
 
 ### Setup
