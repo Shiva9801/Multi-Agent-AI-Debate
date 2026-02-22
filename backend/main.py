@@ -3,14 +3,17 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+origins = [
+    "https://multi-agent-ai-debate.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
+    allow_credentials=True,
     allow_methods=["*"],
-    allow_headers=["*"]
+    allow_headers=["*"],
 )
-
-
 @app.get("/")
 async def root():
     return {"message": "Debate API", "docs": "/docs", "debate": "POST /debate"}
