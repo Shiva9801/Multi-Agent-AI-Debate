@@ -3,7 +3,7 @@ import os
 import warnings
 from dotenv import load_dotenv
 from groq import Groq
-# Suppress deprecation warning until migrating to google.genai
+
 warnings.filterwarnings("ignore", message=".*google.generativeai.*deprecated.*", category=FutureWarning)
 import google.generativeai as genai
 
@@ -20,7 +20,7 @@ async def ask_llama(prompt):
     return res.choices[0].message.content
 
 async def ask_mixtral(prompt):
-    # Groq decommissioned mixtral-8x7b-32768; using Llama 3.1 8B instead
+   
     res = groq_client.chat.completions.create(
         model="llama-3.1-8b-instant",
         messages=[{"role": "user", "content": prompt}]
@@ -28,7 +28,7 @@ async def ask_mixtral(prompt):
     return res.choices[0].message.content
 
 async def ask_gemini(prompt):
-    # gemini-1.5-flash no longer available; use current stable
+    
     model = genai.GenerativeModel("gemini-2.5-flash")
     res = model.generate_content(prompt)
     return res.text
