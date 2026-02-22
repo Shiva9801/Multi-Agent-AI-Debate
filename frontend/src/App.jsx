@@ -12,7 +12,7 @@ export default function App() {
     setLoading(true)
     setResult(null)
 
-    const res = await fetch('http://localhost:8000/debate', {
+    const res = await fetch('https://multi-agent-ai-debate.onrender.com/debate', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ question })
