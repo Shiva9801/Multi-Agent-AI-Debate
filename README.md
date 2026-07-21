@@ -136,25 +136,4 @@ Point the frontend's API base URL at your backend (`http://localhost:8000` by de
 }
 ```
 
-## Deployment
-
-- **Frontend** → Vercel (`vercel.json` already configured: `npm install` / `npm run build` / `dist`)
-- **Backend** → any Python host (Render, Railway, Fly.io, etc.). Update CORS `origins` in `main.py` and the frontend's API URL to match.
-
-## Roadmap / cleanup ideas
-
-- [ ] Add more model providers — `anthropic`, `openai` are already in `requirements.txt` but unused
-- [ ] Remove or merge `debate.py` with `debate_logic.py` (near-duplicates)
-- [ ] Add persistence for past debates (`supabase` is already a dependency)
-- [ ] Add a `.env.example` for easier onboarding
-
-## License
-
-No license file yet — add one (MIT is a common default) if you want others to reuse this freely.
-
----
-
-<div align="center">
-Made with 🤖 x 🤖 x 🤖
-
 </div>
